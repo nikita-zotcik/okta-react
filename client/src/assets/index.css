@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.login-page-container, .sign-up-page-container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: auto;
+}

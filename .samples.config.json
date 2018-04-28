@@ -1,0 +1,22 @@
+{
+  "webServer": {
+    "port": 8080,
+    "oidc": {
+      "clientSecret": "{clientSecret}",
+      "clientId": "0oaeton9tdjh6R4Ff0h7",
+      "issuer": "https://dev-367150.oktapreview.com/oauth2/default",
+      "redirectUri": "http://localhost:8080/implicit/callback",
+      "scope": "openid profile email"
+    }
+  },
+  "resourceServer": {
+    "port": 8000,
+    "oidc": {
+      "issuer": "https://dev-367150.oktapreview.com/oauth2/default"
+    },
+    "assertClaims": {
+      "aud": "api://default",
+      "cid": "0oaeton9tdjh6R4Ff0h7"
+    }
+  }
+}
